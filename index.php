@@ -5,9 +5,9 @@ get_header(); ?>
 <div class="navbar navbar--extended">
     <nav class="nav__mobile"></nav>
     <div class="container">
-        <div class="navbar__inner">
-            <a class="navbar__logo mt-3">
-                <img src="file:///E:/GoogleOne/Web_Design/Active%20projects/January19/Jan19/free_logo_2.png" width="60"/>
+        <div class="navbar__inner" style="width: 100%; justify-content: space-between;">
+            <a class="navbar__logo">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid"/>
             </a>
             <nav class="navbar__menu ">
                 <ul>
