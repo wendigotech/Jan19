@@ -14,7 +14,7 @@
             <nav class="nav__mobile"></nav>
             <div class="container">
                 <div class="navbar__inner" style="width: 100%; justify-content: space-between;">
-                    <a class="navbar__logo">
+                    <a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid p-2"/>
                     </a>
                     <nav class="navbar__menu ">
@@ -38,4 +38,4 @@
             </div>
         </div>
         <!-- Hero unit -->
-        <div class="pg-empty-placeholder">
+        <div>
