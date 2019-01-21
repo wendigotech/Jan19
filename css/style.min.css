@@ -1793,3 +1793,7 @@ select::-ms-expand {
         transition: none;
     }
 }
+
+.dropdown-menu {
+    background-color: #6c63ff;
+}
