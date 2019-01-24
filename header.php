@@ -10,6 +10,7 @@
     </head>
     <body class="<?php echo implode(' ', get_body_class()); ?>">
         <!-- Hero(extended) navbar -->
+        <!-- Hero unit -->
         <div class="navbar navbar--extended">
             <nav class="nav__mobile"></nav>
             <div class="container">
@@ -37,5 +38,4 @@
                 </div>
             </div>
         </div>
-        <!-- Hero unit -->
         <div>
