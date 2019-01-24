@@ -9,7 +9,7 @@ get_header(); ?>
             <div class="container">
                 <div class="hero__content">
                     <div class="hero__content__inner" id='navConverter'>
-                        <h1 class="hero__title"><?php the_title(); ?></h1>
+                        <h1 class="hero__title"><?php _e( 'A production-ready theme for your projects', 'jan19' ); ?></h1>
                         <p class="hero__text"><?php _e( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ); ?></p>
                         <a href="#" class="button button__accent"><?php echo get_field( null ); ?></a>
                         <a href="#" class="button hero__button"><?php _e( 'Learn more', 'jan19' ); ?></a>
@@ -23,43 +23,37 @@ get_header(); ?>
                 <path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/>
             </svg> </span>
     </div>
-    <?php if ( have_posts() ) : ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-            <div <?php post_class( 'steps landing__section' ); ?> id="post-<?php the_ID(); ?>">
-                <div class="container">
-                    <h2><?php _e( 'Who can use Evie?', 'jan19' ); ?></h2>
-                    <p><?php _e( 'Here\'s who we can think of, but surely creative people will surprise us.', 'jan19' ); ?></p>
-                </div>
-                <div class="container">
-                    <div class="steps__inner">
-                        <div class="step">
-                            <div class="step__media">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/./images/undraw_designer.svg" class="step__image">
-                            </div>
-                            <h4><?php _e( 'Programmers', 'jan19' ); ?></h4>
-                            <p class="step__text"><?php _e( 'A landing page for your open source projects. Present your solution, easily create docs.', 'jan19' ); ?></p>
-                        </div>
-                        <div class="step">
-                            <div class="step__media">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/./images/undraw_responsive.svg" class="step__image">
-                            </div>
-                            <h4><?php _e( 'Designers', 'jan19' ); ?></h4>
-                            <p class="step__text"><?php _e( 'A website for your own freebies. Let the world download and use your artwork.', 'jan19' ); ?></p>
-                        </div>
-                        <div class="step">
-                            <div class="step__media">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/./images/undraw_creation.svg" class="step__image">
-                            </div>
-                            <h4><?php _e( 'Makers', 'jan19' ); ?></h4>
-                            <p class="step__text"><?php _e( 'A great starting point for your web application. Focus on your idea and execution.', 'jan19' ); ?></p>
-                        </div>
+    <div class="steps landing__section">
+        <div class="container">
+            <h2><?php _e( 'Who can use Evie?', 'jan19' ); ?></h2>
+            <p><?php _e( 'Here\'s who we can think of, but surely creative people will surprise us.', 'jan19' ); ?></p>
+        </div>
+        <div class="container">
+            <div class="steps__inner">
+                <div class="step">
+                    <div class="step__media">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/./images/undraw_designer.svg" class="step__image">
                     </div>
+                    <h4><?php _e( 'Programmers', 'jan19' ); ?></h4>
+                    <p class="step__text"><?php _e( 'A landing page for your open source projects. Present your solution, easily create docs.', 'jan19' ); ?></p>
+                </div>
+                <div class="step">
+                    <div class="step__media">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/./images/undraw_responsive.svg" class="step__image">
+                    </div>
+                    <h4><?php _e( 'Designers', 'jan19' ); ?></h4>
+                    <p class="step__text"><?php _e( 'A website for your own freebies. Let the world download and use your artwork.', 'jan19' ); ?></p>
+                </div>
+                <div class="step">
+                    <div class="step__media">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/./images/undraw_creation.svg" class="step__image">
+                    </div>
+                    <h4><?php _e( 'Makers', 'jan19' ); ?></h4>
+                    <p class="step__text"><?php _e( 'A great starting point for your web application. Focus on your idea and execution.', 'jan19' ); ?></p>
                 </div>
             </div>
-        <?php endwhile; ?>
-    <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p>
-    <?php endif; ?>
+        </div>
+    </div>
     <div class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
