@@ -20,7 +20,9 @@
                     <nav class="navbar__menu ">
                         <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
                                     'menu' => 'primary',
-                                    'container' => ''
+                                    'container' => '',
+                                    'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
+                                    'walker' => new wp_bootstrap4_navwalker()
                             ) ); ?><?php endif; ?>
                     </nav>
                     <div class="navbar__menu-mob">
