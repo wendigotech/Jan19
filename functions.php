@@ -115,9 +115,27 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
+    wp_deregister_script( 'app' );
+    wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.min.js', false, null, true);
+
+    wp_deregister_script( 'jquery' );
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', false, null, true);
+
+    wp_deregister_script( 'popper' );
+    wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.js', false, null, true);
+
+    wp_deregister_script( 'bootstrap' );
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, null, true);
+
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
+
+    wp_deregister_style( 'bootstrap' );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css', false, null, 'all');
+
+    wp_deregister_style( 'style' );
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css', false, null, 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
