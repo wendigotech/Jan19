@@ -148,7 +148,6 @@ function pgwp_sanitize_placeholder($input) { return $input; }
  * Resource files included by Pinegrow.
  */
 /* Pinegrow generated Include Resources Begin */
-require_once "inc/bootstrap/wp_bootstrap4_navwalker.php";
 
     /* Pinegrow generated Include Resources End */
 ?>
