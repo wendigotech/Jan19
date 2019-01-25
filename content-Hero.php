@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero">____WP_END_HEADER____
             <div class="hero__overlay hero__overlay--gradient"></div>
             <div class="hero__mask"></div>
             <div class="hero__inner">
@@ -14,4 +14,4 @@
                     </div>
                 </div>
             </div>
-        </div>
+        ____WP_START_FOOTER____</div>
