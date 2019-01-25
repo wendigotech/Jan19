@@ -1,9 +1,4 @@
 <?php
-/*
- Hero: hero
- */
-?>
-<?php
 get_header(); ?>
 
 
