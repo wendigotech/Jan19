@@ -17,10 +17,13 @@
                     <a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid p-2"/>
                     </a>
-                    <nav class="navbar__menu ">
+                    <nav class="navbar__menu">
                         <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
                                     'menu' => 'primary',
-                                    'container' => ''
+                                    'menu_class' => 'navbar-nav',
+                                    'container' => '',
+                                    'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
+                                    'walker' => new wp_bootstrap4_navwalker()
                             ) ); ?><?php endif; ?>
                     </nav>
                     <div class="navbar__menu-mob">
