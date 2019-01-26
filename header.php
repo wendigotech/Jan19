@@ -18,21 +18,23 @@
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid p-2"/>
                     </a>
                     <nav class="navbar__menu">
-                        <?php if ( has_nav_menu( 'primary' ) ) : ?><?php
-                                PG_Smart_Walker_Nav_Menu::$options['template'] = '<li id="{ID}" class="{CLASSES}">
-                                                                <a {ATTRS}>{TITLE}</a>
-                                                            </li>';
-                                wp_nav_menu( array(
-                                    'menu' => 'primary',
-                                    'container' => '',
-                                    'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                    'walker' => new PG_Smart_Walker_Nav_Menu()
-                            ) ); ?><?php endif; ?>
+                        <?php if ( has_nav_menu( 'primary' ) ) : ?><ul><?php
+                                    PG_Smart_Walker_Nav_Menu::$options['template'] = '<li id="{ID}" class="{CLASSES}">
+                                                                    <a {ATTRS}>{TITLE}</a>
+                                                                </li>';
+                                    wp_nav_menu( array(
+                                        'menu' => 'primary',
+                                        'container' => '',
+                                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                        'walker' => new PG_Smart_Walker_Nav_Menu()
+                                ) ); ?></ul><?php endif; ?>
                     </nav>
                     <div class="navbar__menu-mob">
                         <a href="" id='toggle'>
                             <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path><svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
                                 <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path>
+                            </svg>
                             </svg>
                         </a>
                     </div>
