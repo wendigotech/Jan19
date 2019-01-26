@@ -6,7 +6,8 @@
                     <div class="hero__content">
                         <?php
                     $hero_args = array(
-                        'page_id' => 'hero'
+                        'page__in' => 'hero',
+                        'post_type' => 'page'
                     )
                 ?><?php $hero = new WP_Query( $hero_args ); ?><?php if ( $hero->have_posts() ) : ?><?php while ( $hero->have_posts() ) : $hero->the_post(); ?><div class="hero__content__inner" id='navConverter'>
                             <h1 class="hero__title"><?php the_title(); ?></h1>
