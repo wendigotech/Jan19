@@ -1,4 +1,4 @@
- // Equivalent of jQuery .ready
+// Equivalent of jQuery .ready
 document.addEventListener('DOMContentLoaded',function(){
 
 	// Initialize variables
