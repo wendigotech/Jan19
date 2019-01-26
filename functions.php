@@ -143,6 +143,12 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
     wp_deregister_style( 'style' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css', false, null, 'all');
 
+    wp_deregister_style( 'swiper' );
+    wp_enqueue_style( 'swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css', false, null, 'all');
+
+    wp_deregister_style( 'custom' );
+    wp_enqueue_style( 'custom', get_template_directory_uri() . '/custom.css', false, null, 'all');
+
     /* Pinegrow generated Enqueue Styles End */
 
     }
