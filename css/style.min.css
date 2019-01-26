@@ -947,9 +947,10 @@ select::-ms-expand {
     -webkit-box-shadow: 0 4px 11px rgba(124,146,169,.5);
     box-shadow: 0 4px 11px rgba(124,146,169,.5);
     background-size: cover;
-    background-position: 50%;
+    background-position: center center;
     background-repeat: no-repeat;
     color: #fff;
+    background-attachment: fixed;
 }
 
 .hero__inner {
