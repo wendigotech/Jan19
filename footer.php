@@ -48,7 +48,7 @@
             
             
     <script>
-var swiper = new Swiper('.blog-slider', {
+    var swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
       effect: 'fade',
       loop: true,
@@ -57,7 +57,7 @@ var swiper = new Swiper('.blog-slider', {
       },
       // autoHeight: true,
       pagination: {
-        el: '.blog-slider__pagination',
+        el: '.swiper-pagination',
         clickable: true,
       }
     });
