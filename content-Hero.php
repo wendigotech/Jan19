@@ -42,7 +42,21 @@
                                     </div>
                                 </div>
                                 <div class="blog-slider__pagination"></div>
-                            </div>
+                            </div><script>
+var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+</script>
                             <p class="hero__text"><?php the_content(); ?></p>
                             
                             <a href="#" class="button button__accent"><?php _e( 'Download Evie', 'jan19' ); ?></a>
