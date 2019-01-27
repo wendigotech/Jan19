@@ -48,7 +48,10 @@
             
             
     <script>
-    var swiper = new Swiper('.swiper-container', {
+    var Swiper;
+    jQuery(document).ready(function () {
+    //initialize swiper when document ready
+    var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
       effect: 'fade',
       loop: true,
@@ -57,9 +60,10 @@
       },
       // autoHeight: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.blog-slider__pagination',
         clickable: true,
       }
+    })
     });
 </script><?php wp_footer(); ?></body>
 </html>
