@@ -127,6 +127,9 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, null, true);
 
     wp_deregister_script( 'swiper' );
+    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', false, null, true);
+
+    wp_deregister_script( 'swiper' );
     wp_enqueue_script( 'swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js', false, null, true);
 
     wp_deregister_script( 'jquery' );
