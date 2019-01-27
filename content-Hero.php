@@ -41,7 +41,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <script>
+                                <div class="blog-slider__pagination"></div>
+                            </div>
+                            <p class="hero__text"><?php the_content(); ?></p>
+                            
+                            <a href="#" class="button button__accent"><?php _e( 'Download Evie', 'jan19' ); ?></a>
+                            <a href="#" class="button hero__button"><?php _e( 'Learn more', 'jan19' ); ?></a>
+                        </div>
+                    </div>
+                </div><script>
 var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
       effect: 'fade',
@@ -55,14 +63,6 @@ var swiper = new Swiper('.blog-slider', {
         clickable: true,
       }
     });
-</script><div class="blog-slider__pagination"></div>
-                            </div>
-                            <p class="hero__text"><?php the_content(); ?></p>
-                            
-                            <a href="#" class="button button__accent"><?php _e( 'Download Evie', 'jan19' ); ?></a>
-                            <a href="#" class="button hero__button"><?php _e( 'Learn more', 'jan19' ); ?></a>
-                        </div>
-                    </div>
-                </div>
+</script>
             </div>
         </div>
