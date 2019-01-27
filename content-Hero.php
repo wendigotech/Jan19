@@ -5,7 +5,21 @@
                 <div class="container">
                     <div class="hero__content">
                         <div class="hero__content__inner" id='navConverter'>
-                            <h1 class="hero__title"><?php the_title(); ?></h1><div class="blog-slider">
+                            <h1 class="hero__title"><?php the_title(); ?></h1><script>
+var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+</script><div class="blog-slider">
                                 <div class="blog-slider__wrp swiper-wrapper">
                                     <div class="blog-slider__item swiper-slide">
                                         <div class="blog-slider__img">
@@ -42,21 +56,7 @@
                                     </div>
                                 </div>
                                 <div class="blog-slider__pagination"></div>
-                            </div><script>
-var swiper = new Swiper('.blog-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-      }
-    });
-</script>
+                            </div>
                             <p class="hero__text"><?php the_content(); ?></p>
                             
                             <a href="#" class="button button__accent"><?php _e( 'Download Evie', 'jan19' ); ?></a>
