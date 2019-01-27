@@ -145,6 +145,9 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
     wp_deregister_style( 'swiper' );
     wp_enqueue_style( 'swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css', false, null, 'all');
 
+    wp_deregister_style( 'style-1' );
+    wp_enqueue_style( 'style-1', get_template_directory_uri() . '/hero.scss', false, null, 'all');
+
     wp_deregister_style( 'hero' );
     wp_enqueue_style( 'hero', get_template_directory_uri() . '/hero.css', false, null, 'all');
 
