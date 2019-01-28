@@ -26,10 +26,10 @@
                                 </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
                                 <div class="blog-slider__pagination"></div>
                             </div>
-                            <p class="hero__text"><?php _e( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ); ?></p>
                             
-                            <a href="#" class="button button__accent"><?php _e( 'Download Evie', 'jan19' ); ?></a>
-                            <a href="#" class="button hero__button"><?php _e( 'Learn more', 'jan19' ); ?></a>
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
