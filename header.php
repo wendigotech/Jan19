@@ -38,4 +38,4 @@
             </div>
         </div>
         <!-- Hero unit -->
-        <div class="pg-empty-placeholder">
+        <div>
