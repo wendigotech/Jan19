@@ -6,10 +6,14 @@
                     <div class="hero__content">
                         <div class="hero__content__inner" id='navConverter'>
                             <h1 class="hero__title"><?php _e( 'A production-ready theme for your projects', 'jan19' ); ?></h1><div class="blog-slider">
-                                <div class="blog-slider__wrp swiper-wrapper">
+                                <?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?><div <?php post_class( 'blog-slider__wrp swiper-wrapper' ); ?> id="post-<?php the_ID(); ?>">
                                     <div class="blog-slider__item swiper-slide">
                                         <div class="blog-slider__img">
-                                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt="">
+                                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt=""><?php
+                                                    if ( has_post_thumbnail() ) {
+                                                        the_post_thumbnail( 'normal' );
+                                                    }
+                                                 ?>
                                         </div>
                                         <div class="blog-slider__content"><?php the_content(); ?></div>
                                     </div>
@@ -35,7 +39,7 @@
                                             <a href="#" class="blog-slider__button"><?php _e( 'Full review', 'jan19' ); ?></a>
                                         </div>
                                     </div>
-                                </div>
+                                </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
                                 <div class="blog-slider__pagination"></div>
                             </div>
                             <p class="hero__text"><?php _e( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ); ?></p>
