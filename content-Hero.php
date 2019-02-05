@@ -5,7 +5,7 @@
                 <div class="container">
                     <div class="hero__content">
                         <div class="hero__content__inner" id='navConverter'>
-                            <h1 class="hero__title"><?php _e( 'A production-ready theme for your projects', 'jan19' ); ?></h1><?php get_template_part( 'content', 'Slider' ); ?>
+                            <?php the_content(); ?><?php get_template_part( 'content', 'Slider' ); ?>
                             
                             
                             
