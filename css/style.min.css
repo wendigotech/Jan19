@@ -896,12 +896,21 @@ select::-ms-expand {
     border-bottom: none;
 }
 
-.js .nav__mobile {
+.js .nav__mobile:hover {
     clip: rect(0 0 0 0);
     max-height: 0;
     position: absolute;
     display: block;
     overflow: visible;
+    zoom: 1;
+}
+
+.js .nav__mobile {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
     zoom: 1;
 }
 
