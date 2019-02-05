@@ -102,6 +102,22 @@ function jan19_customize_register( $wp_customize ) {
     // Do stuff with $wp_customize, the WP_Customize_Manager object.
 
     /* Pinegrow generated Customizer Controls Begin */
+    $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
+
+    $wp_customize->add_section( 'Submenu', array(
+        'title' => __( 'Submenu', 'jan19' )
+    ));
+
+    $wp_customize->add_setting( 'submenu_text', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'submenu_text', array(
+        'label' => __( 'Submenu Text', 'jan19' ),
+        'type' => 'text',
+        'section' => 'Submenu'
+    ));
 
     /* Pinegrow generated Customizer Controls End */
 
