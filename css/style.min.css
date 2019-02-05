@@ -896,7 +896,7 @@ select::-ms-expand {
     border-bottom: none;
 }
 
-.js .nav__mobile {
+.js .nav__mobile:hover {
     clip: rect(0 0 0 0);
     max-height: 0;
     position: absolute;
@@ -1807,10 +1807,6 @@ select::-ms-expand {
 .dropdown-menu {
     background-color: #6c63ff;
     margin-top: -5px;
-}
-
-.nav__mobile li:hover .dropdown-menu {
-    display: block;
 }
 
 .dropdown:hover .dropdown-menu {

@@ -11,7 +11,7 @@
     <body class="<?php echo implode(' ', get_body_class()); ?>">
         <!-- Hero(extended) navbar -->
         <div class="navbar navbar--extended">
-            <nav class="nav__mobile dropdown dropdown-menu"></nav>
+            <nav class="nav__mobile"></nav>
             <div class="container">
                 <div class="navbar__inner" style="width: 100%; justify-content: space-between;">
                     <a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
