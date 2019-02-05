@@ -4,13 +4,13 @@
             <div class="hero__inner">
                 <div class="container">
                     <div class="hero__content">
-                        <div class="hero__content__inner" id='navConverter'>
+                        <?php
+                    $slider_args = array(
+                        'tag' => 'slider'
+                    )
+                ?><?php $slider = new WP_Query( $slider_args ); ?><?php if ( $slider->have_posts() ) : ?><div class="hero__content__inner" id='navConverter'>
                             <?php the_excerpt( ); ?><div class="blog-slider">
-                                <?php
-                            $slider_args = array(
-                                'tag' => 'slider'
-                            )
-                        ?><?php $slider = new WP_Query( $slider_args ); ?><?php if ( $slider->have_posts() ) : ?><div <?php post_class( 'blog-slider__wrp swiper-wrapper' ); ?> id="post-<?php the_ID(); ?>">
+                                <div class="blog-slider__wrp swiper-wrapper">
                                     <?php $slider_item_number = 0; ?><?php while ( $slider->have_posts() && $slider_item_number++ < 3 ) : $slider->the_post(); ?><div class="blog-slider__item swiper-slide">
                                         <div class="blog-slider__img">
                                             <?php
@@ -23,14 +23,14 @@
                                     </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
                                     
                                     
-                                </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
+                                </div>
                                 <div class="blog-slider__pagination"></div>
                             </div>
                             
                             
                             
                             
-                        </div>
+                        </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
                     </div>
                 </div>
             </div><div class="hero__sub">
