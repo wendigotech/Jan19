@@ -875,13 +875,12 @@ select::-ms-expand {
 
 /*! responsive-nav.js 1.0.39 by @viljamis */
 .nav__mobile ul {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    display: block;
+    display: flex;
     list-style: none;
     background-color: #333c44;
     color: #fff;
+    flex-direction: row;
 }
 
 .nav__mobile li {
@@ -908,6 +907,7 @@ select::-ms-expand {
 
 .nav__mobile.opened {
     max-height: 9999px;
+    width: 100%;
 }
 
 .nav-toggle {
@@ -935,8 +935,8 @@ select::-ms-expand {
 }
 
 #toggle svg {
-    height: 1.2em;
-    width: 1.2em;
+    height: 2em;
+    width: 2em;
     vertical-align: middle;
 }
 
