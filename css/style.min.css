@@ -1809,6 +1809,10 @@ select::-ms-expand {
     margin-top: -5px;
 }
 
+.nav__mobile li:hover .dropdown-menu {
+    display: block;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
