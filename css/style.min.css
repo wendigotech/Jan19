@@ -901,7 +901,7 @@ select::-ms-expand {
     max-height: 0;
     position: absolute;
     display: block;
-    overflow: hidden;
+    overflow: visible;
     zoom: 1;
 }
 
@@ -1797,6 +1797,7 @@ select::-ms-expand {
 
 .dropdown-menu {
     background-color: #6c63ff;
+    margin-top: -5px;
 }
 
 .dropdown:hover .dropdown-menu {
