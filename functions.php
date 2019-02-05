@@ -110,6 +110,7 @@ function jan19_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting( 'submenu_text', array(
         'type' => 'theme_mod',
+        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
