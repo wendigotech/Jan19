@@ -18,16 +18,12 @@
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid p-2"/>
                     </a>
                     <nav class="navbar__menu">
-                        <?php if ( has_nav_menu( 'primary' ) ) : ?><ul><?php
-                                    PG_Smart_Walker_Nav_Menu::$options['template'] = '<li id="{ID}" class="{CLASSES}">
-                                                                    <a {ATTRS}>{TITLE}</a>
-                                                                </li>';
-                                    wp_nav_menu( array(
+                        <?php if ( has_nav_menu( 'primary' ) ) : ?><ul><?php wp_nav_menu( array(
                                         'menu' => 'primary',
                                         'container' => '',
                                         'depth' => '2',
-                                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                        'walker' => new PG_Smart_Walker_Nav_Menu()
+                                        'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
+                                        'walker' => new wp_bootstrap4_navwalker()
                                 ) ); ?></ul><?php endif; ?>
                     </nav>
                     <div class="navbar__menu-mob">
