@@ -53,8 +53,9 @@
     //initialize swiper when document ready
     var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
-      parallax: true,
       autoplay: 3000,
+      speed: 800,
+      autoplayDisableOnInteraction: true
       effect: 'fade',
       loop: true,
       mousewheel: {
