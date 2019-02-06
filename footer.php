@@ -63,7 +63,9 @@
         el: '.blog-slider__pagination',
         clickable: true,
       }
-      autoplay: 3000,
+      autoplay: {
+        delay: 5000,
+    },
       speed: 800,
       autoplayDisableOnInteraction: false
     })
