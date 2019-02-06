@@ -56,10 +56,6 @@
       autoplay: 3000,
       speed: 800,
       autoplayDisableOnInteraction: true
-      effect: 'fade'
-      fadeEffect: {
-      crossFade: true
-    },
       loop: true,
       mousewheel: {
         invert: false,
