@@ -14,9 +14,6 @@ function jan19_setup() {
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
     
-    // Gutenberg
-    add_theme_support( 'align-wide' );
-    add_theme_support( 'wp-block-styles' );
 
     /*
      * Let WordPress manage the document title.
@@ -53,6 +50,16 @@ function jan19_setup() {
 endif; // jan19_setup
 
 add_action( 'after_setup_theme', 'jan19_setup' );
+
+// Gutenberg
+function jan19_setup_theme_supported_features() {
+    
+    add_theme_support( 'align-wide' );
+    add_theme_support( 'wp-block-styles' );
+    add_theme_support( 'responsive-embeds' );
+}
+
+add_action( 'after_setup_theme', 'jan19_setup_theme_supported_features' );
 
 
 if ( ! function_exists( 'jan19_init' ) ) :
