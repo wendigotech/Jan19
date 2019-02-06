@@ -18,8 +18,8 @@
                                                     the_post_thumbnail( 'normal' );
                                                 }
                                              ?>
-                                        </div>
-                                        <div class="blog-slider__content"><?php the_content(); ?></div>
+                                        </div><div class="blog-slider__title"><?php the_title(); ?></div>
+                                        
                                     </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
                                     
                                     
