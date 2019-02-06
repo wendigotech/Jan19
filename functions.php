@@ -56,18 +56,6 @@ add_action( 'after_setup_theme', 'jan19_setup' );
 *
 * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
 */
-function mytheme_setup_theme_supported_features() {
-		
-		// Theme supports wide images, galleries and videos.
-		add_theme_support( 'align-wide' );
-		
-		// Make specific theme colors available in the editor.
-    add_theme_support( 'editor-color-palette',
-        array()
-    );
-}
-
-add_action( 'after_setup_theme', 'mytheme_setup_theme_supported_features' );
 
 if ( ! function_exists( 'jan19_init' ) ) :
 
@@ -150,24 +138,25 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
-    wp_enqueue_script( 'jquery', null, null, null, true );
-
-    wp_deregister_script( 'app' );
-    wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.min.js', false, null, true);
-
-    wp_deregister_script( 'popper' );
-    wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.js', false, null, true);
-
-    wp_deregister_script( 'bootstrap' );
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, null, true);
-
-    wp_deregister_script( 'swiper' );
-    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', false, null, true);
-
-    wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, true);
+        wp_deregister_script( 'jquery' );
+        wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, true);
+        
+        wp_deregister_script( 'popper' );
+        wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.js', false, null, true);
+        
+        wp_deregister_script( 'bootstrap' );
+        wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, null, true);
+        
+        wp_deregister_script( 'swiper' );
+        wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', false, null, true);
+        
+        wp_enqueue_script( 'jquery' );
+        
+        wp_deregister_script( 'app' );
+        wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.min.js', false, null, true);
 
     /* Pinegrow generated Enqueue Scripts End */
+        
 
         /* Pinegrow generated Enqueue Styles Begin */
 
