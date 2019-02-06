@@ -63,18 +63,7 @@ function mytheme_setup_theme_supported_features() {
 		
 		// Make specific theme colors available in the editor.
     add_theme_support( 'editor-color-palette',
-        array(
-            'name' => 'dark blue',
-            'color' => '#1767ef',
-        ),
-        array(
-            'name' => 'light gray',
-            'color' => '#eee',
-        ),
-        array(
-            'name' => 'dark gray',
-            'color' => '#444',
-        )
+        array()
     );
 }
 
