@@ -13,6 +13,8 @@ function jan19_setup() {
 
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
+    // Gutenberg
+    add_theme_support( 'align-wide' );
 
     /*
      * Let WordPress manage the document title.
