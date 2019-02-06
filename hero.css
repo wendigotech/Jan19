@@ -172,7 +172,6 @@
     -ms-transform: translateX(-80px);
     transform: translate(-60px, 0px);
     overflow: hidden;
-    margin-right: -;
 }
 
 .blog-slider__img:after {
