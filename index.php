@@ -7,7 +7,7 @@ get_header(); ?>
             </svg> </span>
     </div><div class="steps landing__section">
 
-        <?php the_content(); ?>
+        <div class="container"><?php the_content(); ?></div>
     </div>
 
 
