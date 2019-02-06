@@ -150,7 +150,7 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
-    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'jquery', null, null, null, true );
 
     wp_deregister_script( 'app' );
     wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.min.js', false, null, true);
