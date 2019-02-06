@@ -49,7 +49,7 @@
             
     <script>
     var Swiper;
-    jQuery(document).ready(function () {
+    $(document).ready(function () {
     //initialize swiper when document ready
     var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
