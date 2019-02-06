@@ -53,7 +53,7 @@
     //initialize swiper when document ready
     var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
-      effect: 'fade'
+      effect: 'fade',
       loop: true,
       mousewheel: {
         invert: false,
