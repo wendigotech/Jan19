@@ -65,10 +65,10 @@
       }
       autoplay: {
         delay: 5000,
-    },
+    	},
       speed: 800,
       autoplayDisableOnInteraction: false
-    })
+    	})
     });
 </script><?php wp_footer(); ?></body>
 </html>
