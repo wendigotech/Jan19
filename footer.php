@@ -49,7 +49,7 @@
             
     <script>
     var Swiper;
-    $(document).ready(function () {
+    jQuery(document).ready(function () {
     //initialize swiper when document ready
     var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
@@ -63,7 +63,7 @@
         el: '.blog-slider__pagination',
         clickable: true,
       }
-     })
+    })
     });
 </script><?php wp_footer(); ?></body>
 </html>
