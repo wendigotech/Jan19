@@ -53,9 +53,7 @@
     //initialize swiper when document ready
     var swiper = new Swiper('.blog-slider', {
       spaceBetween: 30,
-      autoplay: 3000,
-      speed: 800,
-      autoplayDisableOnInteraction: true
+      effect: 'fade'
       loop: true,
       mousewheel: {
         invert: false,
@@ -65,6 +63,9 @@
         el: '.blog-slider__pagination',
         clickable: true,
       }
+      autoplay: 3000,
+      speed: 800,
+      autoplayDisableOnInteraction: false
     })
     });
 </script><?php wp_footer(); ?></body>
