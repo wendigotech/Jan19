@@ -64,11 +64,11 @@
         clickable: true,
       }
       autoplay: {
-        delay: 5000,
+        delay: 1000,
         speed: 800,
-        autoplayDisableOnInteraction: false
-    	},
-      })
+        autoplayDisableOnInteraction: false,
+      },
+    })
     });
 </script><?php wp_footer(); ?></body>
 </html>
