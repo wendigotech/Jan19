@@ -223,12 +223,13 @@
 }
 
 .blog-slider__content {
-    padding-right: 25px;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
     .blog-slider__content {
-        margin-top: -80px;
+        margin-top: -40px;
         text-align: center;
         padding: 0 30px;
     }
@@ -308,11 +309,11 @@
 .blog-slider__pagination {
     position: absolute;
     z-index: 21;
-    right: 20px;
-    width: 11px !important;
+    right: 3px;
+    width: 14px !important;
     text-align: center;
     left: auto !important;
-    top: 50%;
+    top: 76%;
     bottom: auto !important;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
