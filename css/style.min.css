@@ -1827,3 +1827,7 @@ select::-ms-expand {
 .space {
     margin-top: 100px;
 }
+
+.page-height {
+    height: 25em;
+}
