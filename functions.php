@@ -165,15 +165,6 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, true);
 
-    wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', false, null, true);
-
-    wp_deregister_script( 'popper' );
-    wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', false, null, true);
-
-    wp_deregister_script( 'bootstrap' );
-    wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', false, null, true);
-
     /* Pinegrow generated Enqueue Scripts End */
         
 
