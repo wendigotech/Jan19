@@ -8,14 +8,14 @@ get_header(); ?>
     </div><div class="steps landing__section">
 
         <div class="container"><?php the_content(); ?></div>
-    </div><div class="expanded landing__section"><?php get_template_part( 'content', 'news' ); ?></div>
+    </div><h2 class="text-center text-uppercase"><?php _e( 'News', 'jan19' ); ?></h2><div class="expanded landing__section"><?php get_template_part( 'content', 'news' ); ?></div>
 <?php
     $value_args = array(
         'tag' => 'value'
     )
 ?><?php $value = new WP_Query( $value_args ); ?><?php if ( $value->have_posts() ) : ?><?php while ( $value->have_posts() ) : $value->the_post(); ?><div class="expanded landing__section">
         <div class="container"><?php the_content(); ?></div>
-    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
+    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><?php get_template_part( 'content', 'choice' ); ?>
 
 
 
