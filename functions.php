@@ -56,6 +56,16 @@ add_action( 'after_setup_theme', 'jan19_setup' );
 *
 * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
 */
+function jan19_setup_theme_supported_features() {
+		
+		// Theme supports wide images, galleries and videos.
+		add_theme_support( 'align-wide' );
+    	add_theme_support( 'wp-block-styles' );
+    	add_theme_support( 'responsive-embeds' );
+		
+}
+
+add_action( 'after_setup_theme', 'jan19_setup_theme_supported_features' );
 
 if ( ! function_exists( 'jan19_init' ) ) :
 
@@ -153,6 +163,9 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', false, null, true);
 
     wp_deregister_script( 'jquery' );
+    wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, true);
+
+    wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', false, null, true);
 
     wp_deregister_script( 'popper' );
@@ -160,9 +173,6 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
 
     wp_deregister_script( 'bootstrap' );
     wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', false, null, true);
-
-    wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, true);
 
     /* Pinegrow generated Enqueue Scripts End */
         
