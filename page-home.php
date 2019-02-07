@@ -9,9 +9,13 @@ get_header(); ?>
 
         <div class="container"><?php the_content(); ?></div>
     </div><div class="expanded landing__section"><?php get_template_part( 'content', 'news' ); ?></div>
-<?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?><div class="expanded landing__section">
+<?php
+    $value_args = array(
+        'tag' => 'value'
+    )
+?><?php $value = new WP_Query( $value_args ); ?><?php if ( $value->have_posts() ) : ?><?php while ( $value->have_posts() ) : $value->the_post(); ?><div class="expanded landing__section">
         <div class="container"><?php the_content(); ?></div>
-    </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
+    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
 
 
 
