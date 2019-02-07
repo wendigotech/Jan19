@@ -45,9 +45,7 @@
             </div>
             
             
-            
-            
-    <script>
+            <script>
     var Swiper;
     jQuery(document).ready(function () {
     //initialize swiper when document ready
@@ -65,5 +63,7 @@
       }
     })
     });
-</script><?php wp_footer(); ?></body>
+</script>
+            
+    <?php wp_footer(); ?></body>
 </html>
