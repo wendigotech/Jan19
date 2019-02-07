@@ -1823,3 +1823,7 @@ select::-ms-expand {
     background-color: transparent;
     border: 0;
 }
+
+.space {
+    margin-top: 100px;
+}
