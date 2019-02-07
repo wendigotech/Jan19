@@ -877,17 +877,15 @@ select::-ms-expand {
 .nav__mobile ul {
     width: 100%;
     display: flex;
-    list-style: none;
     background-color: #333c44;
     color: #fff;
-    flex-direction: row;
 }
 
 .nav__mobile li {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em 0;
+    padding: 1em;
     display: block;
     border-bottom: 1px solid hsla(0,0%,100%,.1);
 }
