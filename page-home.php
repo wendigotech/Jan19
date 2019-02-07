@@ -9,7 +9,7 @@ get_header(); ?>
 
         <div class="container"><?php the_content(); ?></div>
     </div><div class="expanded landing__section"><?php get_template_part( 'content', 'news' ); ?></div>
-<div class="expanded landing__section"><?php get_template_part( 'content', 'value' ); ?></div>
+<?php get_template_part( 'content', get_post_format() ); ?>
 
 
 
