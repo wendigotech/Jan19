@@ -138,7 +138,7 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
-    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'jquery', null, null, null, true );
 
     wp_deregister_script( 'app' );
     wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.min.js', false, null, true);
@@ -151,6 +151,15 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
 
     wp_deregister_script( 'swiper' );
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', false, null, true);
+
+    wp_deregister_script( 'jquery' );
+    wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', false, null, true);
+
+    wp_deregister_script( 'popper' );
+    wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', false, null, true);
+
+    wp_deregister_script( 'bootstrap' );
+    wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', false, null, true);
 
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, true);
