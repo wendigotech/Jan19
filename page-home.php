@@ -9,7 +9,9 @@ get_header(); ?>
 
         <div class="container"><?php the_content(); ?></div>
     </div><div class="expanded landing__section"><?php get_template_part( 'content', 'news' ); ?></div>
-<?php get_template_part( 'content', 'value' ); ?>
+<?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?><div class="expanded landing__section">
+        <div class="container"><?php the_content(); ?></div>
+    </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
 
 
 
