@@ -8,7 +8,7 @@ get_header(); ?>
     </div><div class="steps landing__section">
 
         <div class="container"><?php the_content(); ?></div>
-    </div><h2 class="text-center text-uppercase"><?php _e( 'News', 'jan19' ); ?></h2><div class="expanded landing__section"><?php get_template_part( 'content', 'news' ); ?></div>
+    </div><h2 class="text-center text-uppercase"><?php _e( 'News', 'jan19' ); ?></h2><?php get_template_part( 'content', 'news' ); ?>
 <?php
     $value_args = array(
         'tag' => 'value'
