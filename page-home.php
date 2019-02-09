@@ -15,19 +15,7 @@ get_header(); ?>
     )
 ?><?php $value = new WP_Query( $value_args ); ?><?php if ( $value->have_posts() ) : ?><?php while ( $value->have_posts() ) : $value->the_post(); ?><div class="expanded landing__section">
         <div class="container"><?php the_content(); ?></div>
-    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
-            <div class="expanded__media">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/./images/together.svg" class="expanded__image">
-            </div>
-            <div class="expanded__content">
-                <h2 class="expanded__title"><?php _e( 'Ready for production or rapid prototyping', 'jan19' ); ?></h2>
-                <p class="expanded__text"><?php _e( 'Landing, authentication and a few other pages to select from, despite the small size. Tested on production at unDraw with amazing speeds and unopinionated on how to structure your project. We really hope you\'ll find it awesome and useful!', 'jan19' ); ?></p>
-            </div>
-        </div>
-    </div>
-</div>
+    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><?php get_template_part( 'content', 'choice' ); ?>
 
 
 
