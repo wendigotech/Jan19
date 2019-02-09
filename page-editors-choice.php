@@ -24,7 +24,14 @@ get_header(); ?>
     $choice_args = array(
         'category_name' => 'choice'
     )
-?><?php $choice = new WP_Query( $choice_args ); ?><?php if ( $choice->have_posts() ) : ?><?php get_template_part( 'content', 'choice' ); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?><div <?php post_class( 'expanded landing__section' ); ?> id="post-<?php the_ID(); ?>">
+?><?php $choice = new WP_Query( $choice_args ); ?><?php if ( $choice->have_posts() ) : ?><div class="steps landing__section">
+
+        <div class="container">
+            <?php while ( $choice->have_posts() ) : $choice->the_post(); ?><div class="row pg-empty-placeholder">
+            <?php the_content(); ?>
+        </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
+        </div>
+    </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?><div <?php post_class( 'expanded landing__section' ); ?> id="post-<?php the_ID(); ?>">
         <div class="container"><?php the_content(); ?></div>
     </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><?php
     $tips_args = array(
