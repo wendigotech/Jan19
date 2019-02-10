@@ -14,6 +14,6 @@
                             </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
                             
                             
-                        </div>
+                        </div><a class="btn float-right btn-dark" href="<?php echo esc_url( get_theme_mod( 'submenu_link2' ) ); ?>"><?php _e( 'All Strategy', 'jan19' ); ?></a>
                     </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
                 </div>
