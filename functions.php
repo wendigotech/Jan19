@@ -128,6 +128,17 @@ function jan19_customize_register( $wp_customize ) {
         'title' => __( 'Submenu', 'jan19' )
     ));
 
+    $wp_customize->add_setting( 'submenu_link2', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'submenu_link2', array(
+        'label' => __( 'Strategy Link', 'jan19' ),
+        'type' => 'url',
+        'section' => 'Submenu'
+    ));
+
     $wp_customize->add_setting( 'submenu_text', array(
         'type' => 'theme_mod',
         'default' => __( 'A production-ready theme for your projects', 'jan19' ),
@@ -137,17 +148,6 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'submenu_text', array(
         'label' => __( 'Submenu Text', 'jan19' ),
         'type' => 'text',
-        'section' => 'Submenu'
-    ));
-
-    $wp_customize->add_setting( 'submenu_link2', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'submenu_link2', array(
-        'label' => __( 'Submenu Link2', 'jan19' ),
-        'type' => 'url',
         'section' => 'Submenu'
     ));
 
