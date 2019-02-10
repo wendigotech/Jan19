@@ -1,8 +1,9 @@
-<div class="expanded landing__section" style="background-color: #ffffff;">
+<div class="expanded landing__section" style="background-color: #f6f6f6;">
                     <?php
         $tips_args = array(
             'category_name' => 'strategy',
-            'tag' => 'tips'
+            'tag' => 'tips',
+            'order' => 'DESC'
         )
     ?><?php $tips = new WP_Query( $tips_args ); ?><?php if ( $tips->have_posts() ) : ?><div class="container">
                         <div class="steps__inner">
