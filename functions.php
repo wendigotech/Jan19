@@ -158,7 +158,7 @@ function jan19_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'submenu_link1', array(
         'label' => __( 'Submenu News Link', 'jan19' ),
-        'type' => 'url',
+        'type' => 'textarea',
         'section' => 'Submenu'
     ));
 

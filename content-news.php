@@ -14,6 +14,6 @@
                             </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
                             
                             
-                        </div><a class="btn btn-dark float-right btn-sm" href="<?php echo esc_url( get_theme_mod( 'submenu_link1' ) ); ?>"><?php _e( 'All News', 'jan19' ); ?></a>
+                        </div>
                     </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
                 </div>
