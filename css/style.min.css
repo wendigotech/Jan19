@@ -1091,6 +1091,7 @@ select::-ms-expand {
 .steps {
     text-align: center;
     padding: 16pt 0;
+    background-color: #f6f6f6;
 }
 
 @media (min-width:992px){
