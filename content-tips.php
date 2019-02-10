@@ -1,4 +1,4 @@
-<div class="expanded landing__section" style="background-color: #ffffff;">
+<div class="expanded landing__section">
                     <?php
         $tips_args = array(
             'category_name' => 'strategy',

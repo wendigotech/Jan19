@@ -1,4 +1,4 @@
-<div class="steps landing__section" style="background-color: #ffffff;">
+<div class="steps landing__section">
                     
                     <?php
         $choice_args = array(
