@@ -743,7 +743,7 @@ select::-ms-expand {
 }
 
 .landing__section:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
