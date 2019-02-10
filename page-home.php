@@ -8,7 +8,7 @@ get_header(); ?>
     </div><div class="steps landing__section">
 
         <div class="container"><?php the_content(); ?></div>
-    </div><h2 class="text-center text-uppercase font-weight-bold"><?php _e( 'News', 'jan19' ); ?></h2><?php get_template_part( 'content', 'news' ); ?><a class="btn btn-dark btn-sm text-center d-block" href="<?php echo get_theme_mod( 'submenu_link1', '#' ); ?>"><?php _e( 'All News', 'jan19' ); ?></a>
+    </div><h2 class="text-center text-uppercase font-weight-bold"><?php _e( 'News', 'jan19' ); ?></h2><?php get_template_part( 'content', 'news' ); ?><a class="btn btn-dark btn-sm text-center d-block" href="<?php echo esc_url( get_theme_mod( 'submenu_link1' ) ); ?>"><?php _e( 'All News', 'jan19' ); ?></a>
 <?php
     $value_args = array(
         'tag' => 'value'
