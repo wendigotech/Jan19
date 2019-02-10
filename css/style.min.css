@@ -1092,7 +1092,6 @@ select::-ms-expand {
     text-align: center;
     padding: 16pt 0;
     background-color: #f6f6f6;
-    margin-bottom: 16px;
 }
 
 @media (min-width:992px){
@@ -1161,6 +1160,7 @@ select::-ms-expand {
 
 .expanded {
     padding: 72pt 0;
+    background-color: #f6f6f6;
 }
 
 .expanded__inner {
