@@ -8,14 +8,14 @@ get_header(); ?>
     </div><div class="steps landing__section">
 
         <div class="container"><?php the_content(); ?></div>
-    </div><h2 class="text-center text-uppercase"><?php _e( 'News', 'jan19' ); ?></h2><?php get_template_part( 'content', 'news' ); ?>
+    </div><h2 class="text-center text-uppercase font-weight-bold"><?php _e( 'News', 'jan19' ); ?></h2><?php get_template_part( 'content', 'news' ); ?>
 <?php
     $value_args = array(
         'tag' => 'value'
     )
 ?><?php $value = new WP_Query( $value_args ); ?><?php if ( $value->have_posts() ) : ?><?php while ( $value->have_posts() ) : $value->the_post(); ?><div class="expanded landing__section">
         <div class="container"><?php the_content(); ?></div>
-    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><h2 class="text-center text-uppercase"><?php _e( 'Editors Choice', 'jan19' ); ?></h2><?php get_template_part( 'content', 'choice' ); ?><?php get_template_part( 'content', 'tips' ); ?>
+    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><h2 class="text-center text-uppercase font-weight-bold"><?php _e( 'Editors Choice', 'jan19' ); ?></h2><?php get_template_part( 'content', 'choice' ); ?><?php get_template_part( 'content', 'tips' ); ?>
 
 
 
