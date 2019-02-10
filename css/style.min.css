@@ -1160,7 +1160,6 @@ select::-ms-expand {
 
 .expanded {
     padding: 72pt 0;
-    background-color: #f6f6f6;
 }
 
 .expanded__inner {

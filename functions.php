@@ -122,25 +122,10 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'News link', 'jan19' )
     ));
-
-    $wp_customize->add_section( 'Submenu', array(
-        'title' => __( 'Submenu', 'jan19' )
-    ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
     $wp_customize->add_section( 'Submenu', array(
-        'title' => __( 'Strategy link', 'jan19' )
-    ));
-
-    $wp_customize->add_setting( 'submenu_link2', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'submenu_link2', array(
-        'label' => __( 'Strategy Link', 'jan19' ),
-        'type' => 'url',
-        'section' => 'Submenu'
+        'title' => __( 'Submenu', 'jan19' )
     ));
 
     $wp_customize->add_setting( 'submenu_text', array(
@@ -152,6 +137,17 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'submenu_text', array(
         'label' => __( 'Submenu Text', 'jan19' ),
         'type' => 'text',
+        'section' => 'Submenu'
+    ));
+
+    $wp_customize->add_setting( 'submenu_link2', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'submenu_link2', array(
+        'label' => __( 'Submenu Link2', 'jan19' ),
+        'type' => 'url',
         'section' => 'Submenu'
     ));
 
