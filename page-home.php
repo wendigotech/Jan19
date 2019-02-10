@@ -15,7 +15,13 @@ get_header(); ?>
     )
 ?><?php $value = new WP_Query( $value_args ); ?><?php if ( $value->have_posts() ) : ?><?php while ( $value->have_posts() ) : $value->the_post(); ?><div class="expanded landing__section">
         <div class="container"><?php the_content(); ?></div>
-    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><h2 class="text-center text-uppercase font-weight-bold"><?php _e( 'Editors Choice', 'jan19' ); ?></h2><?php get_template_part( 'content', 'choice' ); ?><?php get_template_part( 'content', 'tips' ); ?><a class="btn btn-dark btn-block" href="<?php echo esc_url( get_theme_mod( 'submenu_link2' ) ); ?>"><?php _e( 'All Strategy', 'jan19' ); ?></a>
+    </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><h2 class="text-center text-uppercase font-weight-bold"><?php _e( 'Editors Choice', 'jan19' ); ?></h2><?php get_template_part( 'content', 'choice' ); ?><?php get_template_part( 'content', 'tips' ); ?><a class="btn btn-dark btn-block" href="<?php echo esc_url( get_theme_mod( 'submenu_link2' ) ); ?>"><?php _e( 'All Strategy', 'jan19' ); ?></a><?php
+    $Providers_args = array(
+        'tag' => 'providers'
+    )
+?><?php $Providers = new WP_Query( $Providers_args ); ?><?php if ( $Providers->have_posts() ) : ?><?php while ( $Providers->have_posts() ) : $Providers->the_post(); ?><div class="cta cta--reverse">
+    <div class="container"><?php the_content(); ?></div>
+</div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
 
 
 
