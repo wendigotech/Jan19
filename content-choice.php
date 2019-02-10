@@ -1,4 +1,4 @@
-<div class="landing__section">
+<div class="landing__section steps">
                     
                     <?php
         $choice_args = array(
