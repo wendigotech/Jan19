@@ -34,7 +34,7 @@
                 </div><div>
                         <div class="footer__row">
                                 
-                            <p class="text-white text-center"><?php echo get_theme_mod( 'footer text', __( 'Paragraph', 'jan19' ) ); ?></p></div><div class="footer__row"> 
+                            <p class="text-white text-center"><?php echo get_theme_mod( 'footer_text', __( 'Paragraph', 'jan19' ) ); ?></p></div><div class="footer__row"> 
                                 
                             <p class="text-danger text-center font-weight-bolder"><?php echo get_theme_mod( 'footer_bottom', __( 'Paragraph', 'jan19' ) ); ?></p></div>
                         

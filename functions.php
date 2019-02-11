@@ -142,8 +142,9 @@ function jan19_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon1', array(
-        'label' => __( 'Footer Icon #1', 'jan19' ),
+        'label' => __( 'Footer Icon#1', 'jan19' ),
         'type' => 'media',
+        'mime_type' => 'image',
         'section' => 'footer'
     ) ) );
 
@@ -153,8 +154,9 @@ function jan19_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon2', array(
-        'label' => __( 'Footer Icon #2', 'jan19' ),
+        'label' => __( 'Footer Icon#2', 'jan19' ),
         'type' => 'media',
+        'mime_type' => 'image',
         'section' => 'footer'
     ) ) );
 
@@ -164,8 +166,9 @@ function jan19_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon3', array(
-        'label' => __( 'Footer Icon #3', 'jan19' ),
+        'label' => __( 'Footer Icon#3', 'jan19' ),
         'type' => 'media',
+        'mime_type' => 'image',
         'section' => 'footer'
     ) ) );
 
@@ -175,8 +178,9 @@ function jan19_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon4', array(
-        'label' => __( 'Footer Icon #4', 'jan19' ),
+        'label' => __( 'Footer Icon#4', 'jan19' ),
         'type' => 'media',
+        'mime_type' => 'image',
         'section' => 'footer'
     ) ) );
 
