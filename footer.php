@@ -6,42 +6,40 @@
         <div class="footer footer--dark">
             <div class="container">
                 <div class="footer__inner">
-                    <a href="index.html" class="footer__textLogo"><?php _e( 'Evie theme', 'jan19' ); ?></a>
+                    <a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid p-2"/>
+                    </a>
                     <div class="footer__data">
                         <div class="footer__data__item">
                             <div class="footer__row">
-                                <?php _e( 'Created by', 'jan19' ); ?> 
-                                <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link"><?php _e( 'Katerina Limpitsouni', 'jan19' ); ?></a>
+                                <nav class="navbar__menu">
+                        <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
+                                                'menu' => 'secondary',
+                                                'container' => '',
+                                                'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
+                                                'walker' => new wp_bootstrap4_navwalker()
+                                        ) ); ?><?php endif; ?>
+                    </nav>
                             </div>
-                            <div class="footer__row">
-                                <?php _e( 'Code/design by', 'jan19' ); ?> 
-                                <a href="https://twitter.com/anges244" target="_blank" class="footer__link"><?php _e( 'Aggelos Gesoulis', 'jan19' ); ?></a>
-                            </div>
+                            
                         </div>
-                        <div class="footer__data__item">
-                            <div class="footer__row"><?php _e( 'Created for', 'jan19' ); ?> 
-                                <a href="https://undraw.co" target="_blank" class="footer__link"><?php _e( 'unDraw', 'jan19' ); ?></a>
+                        <div class="footer__data__item bg-light d-flex flex-row justify-content-between align-items-center align-content-center">
+                            <div class="footer__row"> 
+                                <a class="footer__link" href="#"><img src="http://pinegrow.com/placeholders/img17.jpg" width="50"><?php echo get_theme_mod( 'footer_icon1' ); ?></a><a class="footer__link" href="#">                                    <img src="http://pinegrow.com/placeholders/img17.jpg" width="50"><?php echo get_theme_mod( 'footer_icon2' ); ?></a><a class="footer__link" href="#">                                    <img src="http://pinegrow.com/placeholders/img17.jpg" width="50"><?php echo get_theme_mod( 'footer_icon3' ); ?></a><a class="footer__link" href="#">                                    <img src="http://pinegrow.com/placeholders/img17.jpg" width="50"><?php echo get_theme_mod( 'footer_icon4' ); ?></a>
                             </div>
-                            <div class="footer__row"><?php _e( 'Special thx to', 'jan19' ); ?> 
-                                <a href="https://shareboost.co" target="_blank" class="footer__link"><?php _e( 'ShareBoost', 'jan19' ); ?></a> <?php _e( 'for the support', 'jan19' ); ?>
-                            </div>
+                            
                         </div>
-                        <div class="footer__data__item">
-                            <div class="footer__row">
-                                <a href="https://github.com/anges244/evie" target="_blank" class="footer__link"><?php _e( 'GitHub', 'jan19' ); ?></a>
-                            </div>
-                            <div class="footer__row">
-                                <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link"><?php _e( 'Twitter', 'jan19' ); ?></a>
-                            </div>
-                            <div class="footer__row">
-                                <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link"><?php _e( 'Facebook', 'jan19' ); ?></a>
-                            </div>
-                            <div class="footer__row">
-                                <a href="./additional.html" class="footer__link"><?php _e( 'MIT license', 'jan19' ); ?></a>
-                            </div>
-                        </div>
+                        
                     </div>
-                </div>
+                </div><div>
+                        <div class="footer__row">
+                                
+                            <p class="text-white text-center"><?php echo get_theme_mod( 'footer text', __( 'Paragraph', 'jan19' ) ); ?></p></div><div class="footer__row"> 
+                                
+                            <p class="text-danger text-center font-weight-bolder"><?php echo get_theme_mod( 'footer_bottom', __( 'Paragraph', 'jan19' ) ); ?></p></div>
+                        
+                        
+                    </div>
             </div>
             
             

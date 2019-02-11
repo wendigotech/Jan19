@@ -126,10 +126,80 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'News link', 'jan19' )
     ));
-    $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'Submenu', 'jan19' )
+    ));
+    $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
+
+    $wp_customize->add_section( 'footer', array(
+        'title' => __( 'Footer', 'jan19' )
+    ));
+
+    $wp_customize->add_setting( 'footer_icon1', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon1', array(
+        'label' => __( 'Footer Icon #1', 'jan19' ),
+        'type' => 'media',
+        'section' => 'footer'
+    ) ) );
+
+    $wp_customize->add_setting( 'footer_icon2', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon2', array(
+        'label' => __( 'Footer Icon #2', 'jan19' ),
+        'type' => 'media',
+        'section' => 'footer'
+    ) ) );
+
+    $wp_customize->add_setting( 'footer_icon3', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon3', array(
+        'label' => __( 'Footer Icon #3', 'jan19' ),
+        'type' => 'media',
+        'section' => 'footer'
+    ) ) );
+
+    $wp_customize->add_setting( 'footer_icon4', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon4', array(
+        'label' => __( 'Footer Icon #4', 'jan19' ),
+        'type' => 'media',
+        'section' => 'footer'
+    ) ) );
+
+    $wp_customize->add_setting( 'footer_text', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'footer_text', array(
+        'label' => __( 'Footer Text', 'jan19' ),
+        'type' => 'text',
+        'section' => 'footer'
+    ));
+
+    $wp_customize->add_setting( 'footer_bottom', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'footer_bottom', array(
+        'label' => __( 'Footer Bottom', 'jan19' ),
+        'type' => 'text',
+        'section' => 'footer'
     ));
 
     $wp_customize->add_setting( 'submenu_text', array(

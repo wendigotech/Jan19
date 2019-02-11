@@ -1356,7 +1356,7 @@ select::-ms-expand {
     flex-grow: 1;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: .25rem;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
