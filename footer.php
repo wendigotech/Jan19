@@ -25,7 +25,7 @@
                         </div>
                         <div class="footer__data__item d-flex flex-row align-items-center align-content-center justify-content-around">
                             <div class="footer__row"> 
-                                <?php echo get_theme_mod( 'footer_icon1' ); ?><?php echo get_theme_mod( 'footer_icon2' ); ?><?php echo get_theme_mod( 'footer_icon3' ); ?><?php echo get_theme_mod( 'footer_icon4' ); ?>
+                                <img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon1', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><?php echo get_theme_mod( 'footer_icon2' ); ?><?php echo get_theme_mod( 'footer_icon3' ); ?><?php echo get_theme_mod( 'footer_icon4' ); ?>
                             </div>
                             
                         </div>
