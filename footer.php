@@ -12,9 +12,10 @@
                     <div class="footer__data">
                         <div class="footer__data__item">
                             <div class="footer__row">
-                                <nav class="navbar__menu">
+                                <nav>
                         <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
                                                 'menu' => 'secondary',
+                                                'menu_class' => 'list-inline d-flex text-center flex-row justify-content-between align-items-center align-content-center',
                                                 'container' => '',
                                                 'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
                                                 'walker' => new wp_bootstrap4_navwalker()
