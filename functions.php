@@ -120,15 +120,15 @@ function jan19_customize_register( $wp_customize ) {
     /* Pinegrow generated Customizer Controls Begin */
 
     $wp_customize->add_section( 'Submenu', array(
-        'title' => __( 'Submenu', 'jan19' )
-    ));
-
-    $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'Submenu Strategy Link', 'jan19' )
     ));
 
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'News link', 'jan19' )
+    ));
+
+    $wp_customize->add_section( 'Submenu', array(
+        'title' => __( 'Submenu', 'jan19' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
@@ -154,7 +154,7 @@ function jan19_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon2', array(
-        'label' => __( 'Footer Icon#2', 'jan19' ),
+        'label' => __( 'Footer icon#2', 'jan19' ),
         'type' => 'media',
         'mime_type' => 'image',
         'section' => 'footer'
@@ -166,7 +166,7 @@ function jan19_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon3', array(
-        'label' => __( 'Footer Icon#3', 'jan19' ),
+        'label' => __( 'Footer icon#3', 'jan19' ),
         'type' => 'media',
         'mime_type' => 'image',
         'section' => 'footer'
@@ -178,7 +178,7 @@ function jan19_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_icon4', array(
-        'label' => __( 'Footer Icon#4', 'jan19' ),
+        'label' => __( 'Footer icon#4', 'jan19' ),
         'type' => 'media',
         'mime_type' => 'image',
         'section' => 'footer'
@@ -206,6 +206,18 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'footer'
     ));
 
+    $wp_customize->add_setting( 'submenu_text', array(
+        'type' => 'theme_mod',
+        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'submenu_text', array(
+        'label' => __( 'Submenu Text', 'jan19' ),
+        'type' => 'text',
+        'section' => 'Submenu'
+    ));
+
     $wp_customize->add_setting( 'submenu_link1', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -225,18 +237,6 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'submenu_link2', array(
         'label' => __( 'Submenu Strategy Link', 'jan19' ),
         'type' => 'url',
-        'section' => 'Submenu'
-    ));
-
-    $wp_customize->add_setting( 'submenu_text', array(
-        'type' => 'theme_mod',
-        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'submenu_text', array(
-        'label' => __( 'Submenu Text', 'jan19' ),
-        'type' => 'text',
         'section' => 'Submenu'
     ));
 
