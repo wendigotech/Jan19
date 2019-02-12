@@ -126,6 +126,10 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'News link', 'jan19' )
     ));
+
+    $wp_customize->add_section( 'Submenu', array(
+        'title' => __( 'Submenu', 'jan19' )
+    ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
     $wp_customize->add_section( 'footer', array(
