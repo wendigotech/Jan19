@@ -1148,7 +1148,6 @@ select::-ms-expand {
 @media (min-width:600px){
     .step__image {
         max-width: none;
-        width: 100%;
     }
 }
 
