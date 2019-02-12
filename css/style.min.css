@@ -1832,3 +1832,7 @@ select::-ms-expand {
 .page-height {
     height: 25em;
 }
+
+.card .card-img-top {
+    width: 300px;
+}
