@@ -130,10 +130,6 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'Submenu', 'jan19' )
     ));
-
-    $wp_customize->add_section( 'submenu_title', array(
-        'title' => __( 'Submenu Title', 'jan19' )
-    ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
     $wp_customize->add_section( 'footer', array(
@@ -208,18 +204,6 @@ function jan19_customize_register( $wp_customize ) {
         'label' => __( 'Footer Bottom', 'jan19' ),
         'type' => 'text',
         'section' => 'footer'
-    ));
-
-    $wp_customize->add_setting( 'tips_title', array(
-        'type' => 'theme_mod',
-        'default' => __( 'Strategy &amp; Tips', 'jan19' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'tips_title', array(
-        'label' => __( 'Tips title', 'jan19' ),
-        'type' => 'text',
-        'section' => 'submenu_title'
     ));
 
     $wp_customize->add_setting( 'submenu_text', array(
