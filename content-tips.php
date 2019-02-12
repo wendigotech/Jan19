@@ -1,5 +1,5 @@
 <div class="expanded landing__section">
-                    <h2 class="text-center font-weight-bold"><?php _e( 'Casino Tips', 'jan19' ); ?></h2><?php
+                    <h2 class="text-center font-weight-bold text-uppercase"><?php echo get_theme_mod( 'tips_title', __( 'Strategy &amp; Tips', 'jan19' ) ); ?></h2><?php
         $tips_args = array(
             'category_name' => 'strategy',
             'tag' => 'tips',
