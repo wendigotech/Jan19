@@ -8,7 +8,7 @@ get_header(); ?>
         <div class="container">
             <div class="hero__content" style="min-height: calc(1vh - 50px);"><div class="hero__content__inner" id='navConverter' style="margin-top: 150px; margin-bottom: 150px;">
                     <h1 class="hero__title"><?php the_title(); ?></h1>
-                    <p class="hero__text"><?php echo get_theme_mod( 'submenu_text', __( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ) ); ?></p>
+                    <p class="hero__text"><?php echo get_theme_mod( 'page_text', __( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ) ); ?></p>
 
 
                 </div>
@@ -36,14 +36,14 @@ get_header(); ?>
         <div class="container"><?php the_content(); ?></div>
     </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><div class="expanded landing__section">
         <h2 class="text-center font-weight-bold text-uppercase"><?php _e( 'Casino tips', 'jan19' ); ?></h2><?php
-        $newtips_args = array(
+        $new-tips_args = array(
             'category_name' => 'strategy',
             'tag' => 'new-tips',
             'order' => 'DESC'
         )
-    ?><?php $newtips = new WP_Query( $newtips_args ); ?><?php if ( $newtips->have_posts() ) : ?><div class="container">
+    ?><?php $new-tips = new WP_Query( $new-tips_args ); ?><?php if ( $new-tips->have_posts() ) : ?><div class="container">
             <div class="steps__inner">
-                <?php $newtips_item_number = 0; ?><?php while ( $newtips->have_posts() && $newtips_item_number++ < 3 ) : $newtips->the_post(); ?><div class="step">
+                <?php $new-tips_item_number = 0; ?><?php while ( $new-tips->have_posts() && $new-tips_item_number++ < 3 ) : $new-tips->the_post(); ?><div class="step">
                     <div class="step__media"><?php the_content(); ?></div>
 
 
