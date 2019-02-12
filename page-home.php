@@ -17,13 +17,14 @@ get_header(); ?>
         <div class="container"><?php the_content(); ?></div>
     </div><?php endwhile; ?><?php wp_reset_postdata(); ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><h2 class="text-center text-uppercase font-weight-bold"><?php _e( 'Editors Choice', 'jan19' ); ?></h2><?php get_template_part( 'content', 'choice' ); ?><div class="expanded landing__section">
         <h2 class="text-center font-weight-bold text-uppercase"><?php echo get_theme_mod( 'strategy_title', __( 'Strategy &amp; Tips', 'jan19' ) ); ?></h2><?php
-        $strategy_args = array(
+        $editors_tips_args = array(
             'category_name' => 'strategy',
+            'tag' => 'editors-tips',
             'order' => 'DESC'
         )
-    ?><?php $strategy = new WP_Query( $strategy_args ); ?><?php if ( $strategy->have_posts() ) : ?><div class="container">
+    ?><?php $editors_tips = new WP_Query( $editors_tips_args ); ?><?php if ( $editors_tips->have_posts() ) : ?><div class="container">
             <div class="steps__inner">
-                <?php while ( $strategy->have_posts() ) : $strategy->the_post(); ?><div class="step">
+                <?php while ( $editors_tips->have_posts() ) : $editors_tips->the_post(); ?><div class="step">
                     <div class="step__media"><?php the_content(); ?></div>
 
 
