@@ -24,14 +24,14 @@ get_header(); ?>
         <div class="container"><?php the_content(); ?></div>
     </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><div class="expanded landing__section">
         <h2 class="text-center font-weight-bold text-uppercase"><?php _e( 'Casino Tips', 'jan19' ); ?></h2><?php
-        $editors-tips_args = array(
+        $editors_tips_args = array(
             'category_name' => 'strategy',
             'tag' => 'editors-tips',
             'order' => 'DESC'
         )
-    ?><?php $editors-tips = new WP_Query( $editors-tips_args ); ?><?php if ( $editors-tips->have_posts() ) : ?><div class="container">
+    ?><?php $editors_tips = new WP_Query( $editors_tips_args ); ?><?php if ( $editors_tips->have_posts() ) : ?><div class="container">
             <div class="steps__inner">
-                <?php $editors-tips_item_number = 0; ?><?php while ( $editors-tips->have_posts() && $editors-tips_item_number++ < 3 ) : $editors-tips->the_post(); ?><div class="step">
+                <?php $editors_tips_item_number = 0; ?><?php while ( $editors_tips->have_posts() && $editors_tips_item_number++ < 3 ) : $editors_tips->the_post(); ?><div class="step">
                     <div class="step__media"><?php the_content(); ?></div>
 
 
