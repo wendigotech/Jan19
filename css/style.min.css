@@ -1106,7 +1106,7 @@ select::-ms-expand {
 }
 
 .step {
-    padding: 16pt 0;
+    padding: 16pt 2%;
     text-align: center;
     width: 100%;
     border-top: 1px solid #eee;
