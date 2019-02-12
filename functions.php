@@ -126,10 +126,6 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'News link', 'jan19' )
     ));
-
-    $wp_customize->add_section( 'Submenu', array(
-        'title' => __( 'Submenu', 'jan19' )
-    ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
     $wp_customize->add_section( 'footer', array(
@@ -206,15 +202,15 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'footer'
     ));
 
-    $wp_customize->add_setting( 'submenu_text', array(
+    $wp_customize->add_setting( 'slider_title', array(
         'type' => 'theme_mod',
         'default' => __( 'A production-ready theme for your projects', 'jan19' ),
         'sanitize_callback' => $pgwp_sanitize
     ));
 
-    $wp_customize->add_control( 'submenu_text', array(
-        'label' => __( 'Submenu Text', 'jan19' ),
-        'type' => 'text',
+    $wp_customize->add_control( 'slider_title', array(
+        'label' => __( 'Slider Title', 'jan19' ),
+        'type' => 'textarea',
         'section' => 'Submenu'
     ));
 

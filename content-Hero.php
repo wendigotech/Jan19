@@ -9,7 +9,7 @@
                         'tag' => 'slider'
                     )
                 ?><?php $slider = new WP_Query( $slider_args ); ?><?php if ( $slider->have_posts() ) : ?><div class="hero__content__inner" id='navConverter'>
-                            <h1 class="hero__title"><?php echo get_theme_mod( 'submenu_text', __( 'A production-ready theme for your projects', 'jan19' ) ); ?></h1><div class="blog-slider">
+                            <h1 class="hero__title"><?php echo get_theme_mod( 'slider_title', __( 'A production-ready theme for your projects', 'jan19' ) ); ?></h1><div class="blog-slider">
                                 <div class="blog-slider__wrp swiper-wrapper">
                                     <?php $slider_item_number = 0; ?><?php while ( $slider->have_posts() && $slider_item_number++ < 3 ) : $slider->the_post(); ?><div class="blog-slider__item swiper-slide">
                                         <div class="blog-slider__img">
