@@ -1833,6 +1833,7 @@ select::-ms-expand {
     height: 25em;
 }
 
-.card .card-img-top {
+div.step .card-img-top {
     width: 300px;
+    height: 150px;
 }
