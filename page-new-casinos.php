@@ -22,7 +22,7 @@ get_header(); ?>
             </svg> </span>
     </div><?php get_template_part( 'content', 'new' ); ?><?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?><div <?php post_class( 'expanded landing__section' ); ?> id="post-<?php the_ID(); ?>">
         <div class="container"><?php the_content(); ?></div>
-    </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><h2 class="text-center font-weight-bold"><?php _e( 'Casino Tips', 'jan19' ); ?></h2><?php get_template_part( 'content', 'tips' ); ?>
+    </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><?php get_template_part( 'content', 'tips' ); ?>
 
 
 
