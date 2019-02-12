@@ -244,6 +244,18 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'Submenu'
     ));
 
+    $wp_customize->add_setting( 'page_text', array(
+        'type' => 'theme_mod',
+        'default' => __( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'page_text', array(
+        'label' => __( 'Page text', 'jan19' ),
+        'type' => 'textarea',
+        'section' => 'Submenu'
+    ));
+
     /* Pinegrow generated Customizer Controls End */
 
 }
