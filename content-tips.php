@@ -1,5 +1,5 @@
 <div class="expanded landing__section">
-                    <?php
+                    <h2 class="text-center font-weight-bold"><?php _e( 'Casino Tips', 'jan19' ); ?></h2><?php
         $tips_args = array(
             'category_name' => 'strategy',
             'tag' => 'tips',
