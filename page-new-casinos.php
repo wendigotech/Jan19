@@ -22,7 +22,25 @@ get_header(); ?>
             </svg> </span>
     </div><?php get_template_part( 'content', 'new' ); ?><?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?><div <?php post_class( 'expanded landing__section' ); ?> id="post-<?php the_ID(); ?>">
         <div class="container"><?php the_content(); ?></div>
-    </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><?php get_template_part( 'content', 'tips' ); ?>
+    </div><?php endwhile; ?><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?><div class="expanded landing__section">
+        <?php
+        $new-tips_args = array(
+            'category_name' => 'strategy',
+            'tag' => 'new-tips',
+            'order' => 'DESC'
+        )
+    ?><?php $new-tips = new WP_Query( $new-tips_args ); ?><?php if ( $new-tips->have_posts() ) : ?><div class="container">
+            <div class="steps__inner">
+                <?php while ( $new-tips->have_posts() ) : $new-tips->the_post(); ?><div class="step">
+                    <div class="step__media"><?php the_content(); ?></div>
+
+
+                </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
+
+
+            </div>
+        </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
+    </div>
 
 
 
