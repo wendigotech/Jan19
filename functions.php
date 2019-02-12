@@ -120,10 +120,6 @@ function jan19_customize_register( $wp_customize ) {
     /* Pinegrow generated Customizer Controls Begin */
 
     $wp_customize->add_section( 'Submenu', array(
-        'title' => __( 'Submenu Strategy Link', 'jan19' )
-    ));
-
-    $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'Submenu', 'jan19' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
@@ -225,13 +221,25 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'Submenu'
     ));
 
-    $wp_customize->add_setting( 'submenu_link2', array(
+    $wp_customize->add_setting( 'strategy_title', array(
+        'type' => 'theme_mod',
+        'default' => __( 'Strategy &amp; Tips', 'jan19' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'strategy_title', array(
+        'label' => __( 'Strategy Title', 'jan19' ),
+        'type' => 'textarea',
+        'section' => 'Submenu'
+    ));
+
+    $wp_customize->add_setting( 'strategy_link', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
     ));
 
-    $wp_customize->add_control( 'submenu_link2', array(
-        'label' => __( 'Submenu Strategy Link', 'jan19' ),
+    $wp_customize->add_control( 'strategy_link', array(
+        'label' => __( 'Strategy Link', 'jan19' ),
         'type' => 'url',
         'section' => 'Submenu'
     ));
