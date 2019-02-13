@@ -22,23 +22,35 @@ get_header(); ?>
             </svg> </span>
     </div><div class="steps landing__section">
 
+        <div class="container">
+
         <?php
-        $editors_tips_args = array(
-            'category_name' => 'strategy',
-            'tag' => 'editors-tips',
-            'order' => 'DESC'
-        )
-    ?><?php $editors_tips = new WP_Query( $editors_tips_args ); ?><?php if ( $editors_tips->have_posts() ) : ?><div class="container">
-            <div class="steps__inner">
-                <?php $editors_tips_item_number = 0; ?><?php while ( $editors_tips->have_posts() && $editors_tips_item_number++ < 3 ) : $editors_tips->the_post(); ?><div class="step">
-                    <div class="step__media"><?php the_content(); ?></div>
-
-
-                </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
-
-
-            </div>
-        </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
+            $slider_args = array(
+                'tag' => 'slider'
+            )
+        ?><?php $slider = new WP_Query( $slider_args ); ?><?php if ( $slider->have_posts() ) : ?><div class="hero__content__inner" id='navConverter'>
+                <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                        <?php $slider_item_number = 0; ?>
+                        <?php while ( $slider->have_posts() && $slider_item_number++ < 3 ) : $slider->the_post(); ?>
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img">
+                                    <?php
+                                        if ( has_post_thumbnail() ) {
+                                            the_post_thumbnail( 'normal' );
+                                        }
+                                     ?>
+                                </div>
+                                <div class="blog-slider__content">
+                                    <?php the_content(); ?>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                    <div class="blog-slider__pagination"></div>
+                </div>
+            </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?></div>
     </div><div class="expanded landing__section">
         <?php
         $newtips_args = array(

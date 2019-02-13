@@ -170,7 +170,7 @@
     border-radius: 20px;
     -webkit-transform: translateX(-80px);
     -ms-transform: translateX(-80px);
-    transform: translate(-60px, 0px);
+    transform: translate(0px, 0px);
     overflow: hidden;
     margin-right: -;
 }

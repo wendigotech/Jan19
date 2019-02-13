@@ -7,7 +7,7 @@ get_header(); ?>
     <div class="hero__inner">
         <div class="container">
             <div class="hero__content" style="min-height: calc(1vh - 50px);"><div class="hero__content__inner" id='navConverter' style="margin-top: 150px; margin-bottom: 150px;">
-                    <h1 class="hero__title"><?php the_title(); ?></h1>
+                    <h1 class="hero__title"><?php the_title(); ?></h1><p><?php echo get_theme_mod( 'page_text' ); ?></p>
 
 
 
