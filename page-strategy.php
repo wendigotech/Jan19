@@ -22,7 +22,7 @@ get_header(); ?>
             </svg> </span>
     </div><div class="steps landing__section">
 
-        <?php
+        <h2 class="text-center font-weight-bold text-uppercase"><?php _e( 'Editors Tips', 'jan19' ); ?></h2><?php
         $editors_tips_args = array(
             'category_name' => 'strategy',
             'tag' => 'editors-tips',
@@ -40,7 +40,7 @@ get_header(); ?>
             </div>
         </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
     </div><div class="expanded landing__section">
-        <?php
+        <h2 class="text-center font-weight-bold text-uppercase"><?php _e( 'New Casino Tips', 'jan19' ); ?></h2><?php
         $newtips_args = array(
             'category_name' => 'strategy',
             'tag' => 'new-tips',
@@ -58,7 +58,7 @@ get_header(); ?>
             </div>
         </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'jan19' ); ?></p><?php endif; ?>
     </div><div class="expanded landing__section">
-        <?php
+        <h2 class="text-center font-weight-bold text-uppercase"><?php _e( 'Live Casino Strategy', 'jan19' ); ?></h2><?php
         $strategy_args = array(
             'category_name' => 'strategy',
             'tag' => 'recommend',
