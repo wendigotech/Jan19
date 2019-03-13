@@ -173,18 +173,6 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'footer'
     ));
 
-    $wp_customize->add_setting( 'slider_title', array(
-        'type' => 'theme_mod',
-        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'slider_title', array(
-        'label' => __( 'Slider Title', 'jan19' ),
-        'type' => 'textarea',
-        'section' => 'Submenu'
-    ));
-
     $wp_customize->add_setting( 'page_text', array(
         'type' => 'theme_mod',
         'default' => __( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ),
@@ -193,6 +181,18 @@ function jan19_customize_register( $wp_customize ) {
 
     $wp_customize->add_control( 'page_text', array(
         'label' => __( 'Page text', 'jan19' ),
+        'type' => 'textarea',
+        'section' => 'Submenu'
+    ));
+
+    $wp_customize->add_setting( 'slider_title', array(
+        'type' => 'theme_mod',
+        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'slider_title', array(
+        'label' => __( 'Slider Title', 'jan19' ),
         'type' => 'textarea',
         'section' => 'Submenu'
     ));
