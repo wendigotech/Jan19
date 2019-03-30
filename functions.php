@@ -127,6 +127,17 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'footer'
     ) ) );
 
+    $wp_customize->add_setting( 'icon3_link', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'icon3_link', array(
+        'label' => __( 'Icon#3 Link', 'jan19' ),
+        'type' => 'url',
+        'section' => 'footer'
+    ));
+
     $wp_customize->add_setting( 'footer_icon3', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -138,17 +149,6 @@ function jan19_customize_register( $wp_customize ) {
         'mime_type' => 'image',
         'section' => 'footer'
     ) ) );
-
-    $wp_customize->add_setting( 'icon3_link', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'icon3_link', array(
-        'label' => __( 'Icon#3 Link', 'jan19' ),
-        'type' => 'url',
-        'section' => 'footer'
-    ));
 
     $wp_customize->add_setting( 'footer_icon4', array(
         'type' => 'theme_mod',
