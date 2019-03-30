@@ -94,14 +94,14 @@ function jan19_customize_register( $wp_customize ) {
     // Do stuff with $wp_customize, the WP_Customize_Manager object.
     /* Pinegrow generated Customizer Controls Begin */
 
+    $wp_customize->add_section( 'footer', array(
+        'title' => __( 'Footer', 'jan19' )
+    ));
+
     $wp_customize->add_section( 'Submenu', array(
         'title' => __( 'Submenu', 'jan19' )
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
-
-    $wp_customize->add_section( 'footer', array(
-        'title' => __( 'Footer', 'jan19' )
-    ));
 
     $wp_customize->add_setting( 'footer_icon1', array(
         'type' => 'theme_mod',
@@ -139,6 +139,17 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'footer'
     ) ) );
 
+    $wp_customize->add_setting( 'icon3_link', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'icon3_link', array(
+        'label' => __( 'Icon#3 Link', 'jan19' ),
+        'type' => 'url',
+        'section' => 'footer'
+    ));
+
     $wp_customize->add_setting( 'footer_icon4', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -151,6 +162,8 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'footer'
     ) ) );
 
+    $wp_customize->add_section( 'jan19_default_cs', array('title' => 'Default section'));
+
     $wp_customize->add_setting( 'footer_text', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -159,7 +172,7 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'footer_text', array(
         'label' => __( 'Footer Text', 'jan19' ),
         'type' => 'text',
-        'section' => 'footer'
+        'section' => 'jan19_default_cs'
     ));
 
     $wp_customize->add_setting( 'footer_bottom', array(
@@ -170,7 +183,7 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'footer_bottom', array(
         'label' => __( 'Footer Bottom', 'jan19' ),
         'type' => 'text',
-        'section' => 'footer'
+        'section' => 'jan19_default_cs'
     ));
 
     $wp_customize->add_setting( 'page_text', array(
