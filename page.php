@@ -8,7 +8,7 @@ get_header(); ?>
         <div class="container">
             <div class="hero__content" style="min-height: calc(1vh - 50px);"><div class="hero__content__inner" id='navConverter' style="margin-top: 150px; margin-bottom: 150px;">
                     <h1 class="hero__title"><?php the_title(); ?></h1>
-                    <p class="hero__text"><?php _e( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ); ?></p>
+                    <p class="hero__text"><?php echo get_theme_mod( 'page_text', __( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ) ); ?></p>
 
 
                 </div>
