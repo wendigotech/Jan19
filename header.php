@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="navbar__inner" style="width: 100%; justify-content: space-between;">
                     <a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid p-2"/>
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/My-Casino-Time-logotype.png" class="img-fluid p-2" width="180"/>
                     </a>
                     <nav class="navbar__menu">
                         <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
