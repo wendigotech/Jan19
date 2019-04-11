@@ -14,11 +14,7 @@
             <nav class="nav__mobile"></nav>
             <div class="container">
                 <div class="navbar__inner" style="width: 100%; justify-content: space-between;">
-                    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
-                                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path><svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
-                                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path>
-                            </svg>
-                            </svg><a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
+                    <a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/My-Casino-Time-logotype.png" class="img-fluid p-2" width="180"/>
                     </a>
                     <nav class="navbar__menu">
@@ -31,7 +27,11 @@
                     </nav>
                     <div class="navbar__menu-mob">
                         <a href="" id='toggle'>
-                            
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path><svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
+                                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path>
+                            </svg>
+                            </svg>
                         </a>
                     </div>
                 </div>
