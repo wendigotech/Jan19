@@ -186,6 +186,30 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'jan19_default_cs'
     ));
 
+    $wp_customize->add_setting( 'page_text', array(
+        'type' => 'theme_mod',
+        'default' => __( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'page_text', array(
+        'label' => __( 'Page text', 'jan19' ),
+        'type' => 'textarea',
+        'section' => 'Submenu'
+    ));
+
+    $wp_customize->add_setting( 'slider_title', array(
+        'type' => 'theme_mod',
+        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'slider_title', array(
+        'label' => __( 'Slider Title', 'jan19' ),
+        'type' => 'textarea',
+        'section' => 'Submenu'
+    ));
+
     $wp_customize->add_setting( 'news_link', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -220,30 +244,6 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'Submenu'
     ));
 
-    $wp_customize->add_setting( 'slider_title', array(
-        'type' => 'theme_mod',
-        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'slider_title', array(
-        'label' => __( 'Slider Title', 'jan19' ),
-        'type' => 'textarea',
-        'section' => 'Submenu'
-    ));
-
-    $wp_customize->add_setting( 'page_text', array(
-        'type' => 'theme_mod',
-        'default' => __( 'Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.', 'jan19' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'page_text', array(
-        'label' => __( 'Page text', 'jan19' ),
-        'type' => 'textarea',
-        'section' => 'Submenu'
-    ));
-
     $wp_customize->add_setting( 'page_text', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -269,10 +269,10 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
     wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.min.js', false, null, true);
 
     wp_deregister_script( 'popper' );
-    wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', false, null, true);
+    wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.js', false, null, true);
 
     wp_deregister_script( 'bootstrap' );
-    wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', false, null, true);
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, null, true);
 
     wp_deregister_script( 'swiper' );
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', false, null, true);
@@ -280,18 +280,12 @@ if ( ! function_exists( 'jan19_enqueue_scripts' ) ) :
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, true);
 
-    wp_deregister_script( 'popper' );
-    wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.js', false, null, true);
-
-    wp_deregister_script( 'bootstrap' );
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, null, true);
-
     /* Pinegrow generated Enqueue Scripts End */
         
         /* Pinegrow generated Enqueue Styles Begin */
 
     wp_deregister_style( 'bootstrap' );
-    wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', false, null, 'all');
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css', false, null, 'all');
 
     wp_deregister_style( 'style' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css', false, null, 'all');
