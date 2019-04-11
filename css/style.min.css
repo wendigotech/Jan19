@@ -1808,7 +1808,7 @@ select::-ms-expand {
     margin-top: -5px;
 }
 
-.dropdown-menu:hover .dropdown-item {
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
