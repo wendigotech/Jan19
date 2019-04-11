@@ -377,3 +377,9 @@
         width: 30px;
     }
 }
+
+@media only screen and (max-width:991px) {
+    .navbar__logo img {
+        max-width: 70%;
+    }
+}
