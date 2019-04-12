@@ -1809,7 +1809,12 @@ select::-ms-expand {
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+}
+
+@media (min-width:992px){
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 .dropdown-item {
