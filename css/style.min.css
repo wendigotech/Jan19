@@ -876,9 +876,9 @@ select::-ms-expand {
 /*! responsive-nav.js 1.0.39 by @viljamis */
 .nav__mobile ul {
     width: 100%;
-    display: block;
+    display: inherit;
     background-color: #333c44;
-    color: #fff;
+    color: #845555;
 }
 
 .nav__mobile li {
@@ -1823,7 +1823,7 @@ select::-ms-expand {
     padding: .25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #2e79c3;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
