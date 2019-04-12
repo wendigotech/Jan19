@@ -1854,7 +1854,7 @@ div.step .card-img-top {
     }
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (min-width:992px) {
     .dropdown-item {
         display: contents;
     }
