@@ -1849,3 +1849,9 @@ div.step .card-img-top {
         width: -1px;
     }
 }
+
+@media only screen and (min-width:600px) {
+    .navbar__logo {
+        max-width: 120px;
+    }
+}
