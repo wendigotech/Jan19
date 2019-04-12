@@ -876,7 +876,7 @@ select::-ms-expand {
 /*! responsive-nav.js 1.0.39 by @viljamis */
 .nav__mobile ul {
     width: 100%;
-    display: flex;
+    display: block;
     background-color: #333c44;
     color: #fff;
 }
@@ -908,7 +908,7 @@ select::-ms-expand {
     max-height: 0;
     position: absolute;
     display: block;
-    overflow: hidden;
+    overflow: visible;
     zoom: 1;
 }
 
