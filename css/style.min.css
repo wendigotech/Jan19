@@ -1853,3 +1853,9 @@ div.step .card-img-top {
         max-width: 130px;
     }
 }
+
+@media only screen and (max-width:991px) {
+    .dropdown-item {
+        display: contents;
+    }
+}
