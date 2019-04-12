@@ -879,6 +879,7 @@ select::-ms-expand {
     display: inherit;
     background-color: #333c44;
     color: #845555;
+    border-radius: 15px;
 }
 
 .nav__mobile li {
@@ -888,7 +889,7 @@ select::-ms-expand {
     padding: 1em;
     display: contents;
     border-bottom: 1px solid hsla(0,0%,100%,.1);
-    color: cornflowerblue;
+    color: #6c63ff;
 }
 
 .nav__mobile li:last-child {
@@ -1819,12 +1820,12 @@ select::-ms-expand {
 }
 
 .dropdown-item {
-    display: contents;
+    display: unset;
     width: 100%;
     padding: .25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #2e79c3;
+    color: #f6f6f6;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -1844,13 +1845,7 @@ div.step .card-img-top {
     height: 150px;
 }
 
-@media only screen and (max-width:991px) {
-    .navbar__logo {
-        width: -1px;
-    }
-}
-
-@media only screen and (min-width:600px) {
+@media only screen and (max-width:599px) {
     .navbar__logo {
         max-width: 120px;
     }
