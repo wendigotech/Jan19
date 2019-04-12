@@ -886,8 +886,9 @@ select::-ms-expand {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-    display: block;
+    display: contents;
     border-bottom: 1px solid hsla(0,0%,100%,.1);
+    color: cornflowerblue;
 }
 
 .nav__mobile li:last-child {

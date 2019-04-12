@@ -198,6 +198,18 @@ function jan19_customize_register( $wp_customize ) {
         'section' => 'Submenu'
     ));
 
+    $wp_customize->add_setting( 'slider_title', array(
+        'type' => 'theme_mod',
+        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'slider_title', array(
+        'label' => __( 'Slider Title', 'jan19' ),
+        'type' => 'textarea',
+        'section' => 'Submenu'
+    ));
+
     $wp_customize->add_setting( 'news_link', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -229,18 +241,6 @@ function jan19_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'strategy_link', array(
         'label' => __( 'Strategy Link', 'jan19' ),
         'type' => 'url',
-        'section' => 'Submenu'
-    ));
-
-    $wp_customize->add_setting( 'slider_title', array(
-        'type' => 'theme_mod',
-        'default' => __( 'A production-ready theme for your projects', 'jan19' ),
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'slider_title', array(
-        'label' => __( 'Slider Title', 'jan19' ),
-        'type' => 'textarea',
         'section' => 'Submenu'
     ));
 
