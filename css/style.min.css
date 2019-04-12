@@ -813,7 +813,7 @@ select::-ms-expand {
 
 @media (min-width:600px){
     .navbar__menu li {
-        margin-left: 16pt;
+        margin-left: 14pt;
     }
 }
 
@@ -876,13 +876,13 @@ select::-ms-expand {
 /*! responsive-nav.js 1.0.39 by @viljamis */
 .nav__mobile ul {
     width: 100%;
-    display: flex;
+    display: block;
     background-color: #333c44;
     color: #fff;
 }
 
 .nav__mobile li {
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -906,9 +906,9 @@ select::-ms-expand {
 .js .nav__mobile {
     clip: rect(0 0 0 0);
     max-height: 0;
-    position: relative;
+    position: absolute;
     display: block;
-    overflow: hidden;
+    overflow: visible;
     zoom: 1;
 }
 
@@ -941,7 +941,7 @@ select::-ms-expand {
 
 @media (min-width:600px) {
     .js .nav__mobile {
-        position: relative;
+        position: absolute;
     }
 }
 
@@ -1812,8 +1812,10 @@ select::-ms-expand {
     margin-top: -5px;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
+@media (min-width:600px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 .dropdown-item {
