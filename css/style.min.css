@@ -223,7 +223,7 @@ svg {
 }
 
 .container {
-    width: 100%;
+    width: 88%;
     max-width: 1080px;
     margin: 0 auto;
     position: relative;
@@ -796,7 +796,7 @@ select::-ms-expand {
     display: block;
 }
 
-@media (min-width:600px){
+@media (min-width:992px){
     .navbar__menu {
         display: flex;
         width: 100%;
@@ -811,9 +811,9 @@ select::-ms-expand {
     display: inline-block;
 }
 
-@media (min-width:600px){
+@media (min-width:992px){
     .navbar__menu li {
-        margin-left: 14pt;
+        margin-left: 16pt;
     }
 }
 
@@ -821,7 +821,7 @@ select::-ms-expand {
     color: #fff;
 }
 
-@media (min-width:600px){
+@media (min-width:992px){
     .navbar__menu a {
         opacity: .75;
     }
@@ -858,7 +858,7 @@ select::-ms-expand {
     display: none;
 }
 
-@media (min-width:600px){
+@media (min-width:992px){
     .navbar__menu-mob {
         display: none;
     }
@@ -876,13 +876,13 @@ select::-ms-expand {
 /*! responsive-nav.js 1.0.39 by @viljamis */
 .nav__mobile ul {
     width: 100%;
-    display: block;
+    display: flex;
     background-color: #333c44;
     color: #fff;
 }
 
 .nav__mobile li {
-    width: 100%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -908,7 +908,7 @@ select::-ms-expand {
     max-height: 0;
     position: absolute;
     display: block;
-    overflow: visible;
+    overflow: hidden;
     zoom: 1;
 }
 
@@ -928,20 +928,16 @@ select::-ms-expand {
 }
 
 @media (min-width:992px){
-    .nav-toggle {
-        display: none;
+    .js .nav__mobile {
+        position: relative;
     }
-}
 
-@media (min-width:600px) {
     .js .nav__mobile.closed {
         max-height: none;
     }
-}
 
-@media (min-width:600px) {
-    .js .nav__mobile {
-        position: absolute;
+    .nav-toggle {
+        display: none;
     }
 }
 
@@ -1812,10 +1808,8 @@ select::-ms-expand {
     margin-top: -5px;
 }
 
-@media (min-width:600px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .dropdown-item {
@@ -1846,6 +1840,6 @@ div.step .card-img-top {
 
 @media only screen and (max-width:991px) {
     .navbar__logo {
-        max-width: 130px;
+        width: -1px;
     }
 }
