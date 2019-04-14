@@ -15,7 +15,7 @@
                                 <nav>
                         <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
                                                 'menu' => 'secondary',
-                                                'menu_class' => 'list-inline d-flex text-center flex-row justify-content-between align-items-center align-content-center',
+                                                'menu_class' => 'list-inline text-center flex-row justify-content-between align-items-center align-content-center',
                                                 'container' => '',
                                                 'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
                                                 'walker' => new wp_bootstrap4_navwalker()
@@ -24,9 +24,9 @@
                             </div>
                             
                         </div>
-                        <div class="footer__data__item d-flex flex-row align-items-center align-content-center justify-content-around">
+                        <div class="footer__data__item align-items-center flex-column-reverse justify-content-between flex-wrap align-content-center">
                             <div class="footer__row"> 
-                                <img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon1', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon2', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><a href="<?php echo get_theme_mod( 'icon3_link', '#' ); ?>"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon3', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100" href="#"></a><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon4', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100">
+                                <img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon1', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon2', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><a href="<?php echo get_theme_mod( 'icon3_link', '#' ); ?>"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon3', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100" href="#"></a><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon4', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon4', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100">
                             </div>
                             
                         </div>
