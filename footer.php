@@ -15,7 +15,7 @@
                                 <nav>
                         <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
                                                 'menu' => 'secondary',
-                                                'menu_class' => 'list-inline text-center flex-row justify-content-between align-items-center align-content-center',
+                                                'menu_class' => 'list-inline text-center flex-row justify-content-between align-items-center align-content-center d-lg-flex',
                                                 'container' => '',
                                                 'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
                                                 'walker' => new wp_bootstrap4_navwalker()
