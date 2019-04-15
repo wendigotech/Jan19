@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="footer__inner">
                     <a class="navbar__logo" href="<?php echo esc_url( get_home_url() ); ?>">
-                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/free_logo_2.png" width="60" class="img-fluid p-2"/>
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/My-Casino-Time-logotype.png" class="img-fluid p-2" width="100"/>
                     </a>
                     <div class="footer__data">
                         <div class="footer__data__item">
@@ -25,7 +25,7 @@
                             
                         </div>
                         <div class="footer__data__item">
-                            <div class="footer__row d-flex flex-row justify-content-around align-items-center"> 
+                            <div class="footer__row d-flex flex-row justify-content-around align-items-start"> 
                                 <img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon1', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon2', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><a href="<?php echo get_theme_mod( 'icon3_link', '#' ); ?>"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon3', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100" href="#"></a><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon4', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon4', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100">
                             </div>
                             
