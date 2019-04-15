@@ -24,8 +24,8 @@
                             </div>
                             
                         </div>
-                        <div class="footer__data__item align-items-center flex-column-reverse justify-content-between flex-wrap align-content-center">
-                            <div class="footer__row"> 
+                        <div class="footer__data__item">
+                            <div class="footer__row d-flex flex-row justify-content-around align-items-center"> 
                                 <img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon1', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon2', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><a href="<?php echo get_theme_mod( 'icon3_link', '#' ); ?>"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon3', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100" href="#"></a><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon4', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100"><img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'footer_icon4', 'http://pinegrow.com/placeholders/img17.jpg' ), 'normal' ) ?>" width="100">
                             </div>
                             
