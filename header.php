@@ -35,7 +35,9 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div><?php if ( is_active_sidebar( 'sidebar1' ) ) : ?><div class="col-md-4">
+                    <?php dynamic_sidebar( 'sidebar1' ); ?>
+                </div><?php endif; ?>
         </div>
         <!-- Hero unit -->
         <div>
